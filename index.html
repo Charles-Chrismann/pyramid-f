@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <loding-screen>
+            <p>Loading...</p>
+        </loding-screen>
+
+        <setup-screen>
+            <div class="choice">
+                <p>Join A Lobby</p>
+                <form action="#" method="post">
+                    <label for="lobbyId">Enter Lobby Id</label>
+                    <input type="text" name="lobbyId" id="lobbyId">
+                    <input type="submit" value="Join Lobby">
+                </form>
+            </div>
+            <div class="choice">
+                <p>Join A Lobby</p>
+                <form action="#" method="post">
+                    <label for="lobbyId">Enter Lobby Id</label>
+                    <input type="text" name="lobbyId" id="lobbyId">
+                    <input type="submit" value="Join Lobby">
+                </form>
+            </div>
+            <div class="dvt">
+                <p>Developpement only</p>
+                <button>Navigate to lobby</button>
+            </div>
+        </setup-screen>
+
+        <lobby-screen>
+            <div>
+                <h2>Pyramid of Height X</h2>
+                <div class="pyramid-preview"></div>
+            </div>
+            <div>
+                <div class="rules"></div>
+                <div class="players"></div>
+                <form action="#" method="post">
+                    <input type="submit" value="Join Game">
+                </form>
+            </div>
+        </lobby-screen>
+
+        <game-screen>
+            <template class="template__card">
+                <div class="card">
+                    <span class="symbole"></span>
+                    <span class="value"></span>
+                </div>
+            </template>
+            
+            <main-game>
+                <pyramid-container>
+                    <pyramid-row>
+                        <div class="card">
+                            <span class="symbole">1</span>
+                            <span class="value">1</span>
+                        </div>
+                    </pyramid-row>
+                    <pyramid-row>
+                        <div class="card">
+                            <span class="symbole">1</span>
+                            <span class="value">1</span>
+                        </div>
+                        <div class="card">
+                            <span class="symbole">1</span>
+                            <span class="value">1</span>
+                        </div>
+                    </pyramid-row>
+                    <pyramid-row>
+                        <div class="card">
+                            <span class="symbole">1</span>
+                            <span class="value">1</span>
+                        </div>
+                        <div class="card">
+                            <span class="symbole">1</span>
+                            <span class="value">1</span>
+                        </div>
+                        <div class="card">
+                            <span class="symbole">1</span>
+                            <span class="value">1</span>
+                        </div>
+                    </pyramid-row>
+                    <pyramid-row>
+                        <div class="card">
+                            <span class="symbole">1</span>
+                            <span class="value">1</span>
+                        </div>
+                        <div class="card">
+                            <span class="symbole">1</span>
+                            <span class="value">1</span>
+                        </div>
+                        <div class="card">
+                            <span class="symbole">1</span>
+                            <span class="value">1</span>
+                        </div>
+                        <div class="card">
+                            <span class="symbole">1</span>
+                            <span class="value">1</span>
+                        </div>
+                    </pyramid-row>
+                </pyramid-container>
+            </main-game>
+            <player-cards></player-cards>
+        </game-screen>
+        <script src="./script.js"></script>
+    </main>
+</body>
+</html>
